@@ -3,9 +3,9 @@ pipeline{
          docker {
              image 'centos:latest'
          }
-    }
-    option {
+         option {
         newContainerPerStage()
+    }
     }
     stages{
         stage("build"){
