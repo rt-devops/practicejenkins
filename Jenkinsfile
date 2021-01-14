@@ -4,6 +4,9 @@ pipeline{
              image 'centos:latest'
          }
     }
+    option {
+        newContainerPerStage()
+    }
     stages{
         stage("build"){
             steps{
