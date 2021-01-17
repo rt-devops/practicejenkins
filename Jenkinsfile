@@ -3,8 +3,6 @@ pipeline{
          docker {
              image 'centos:latest'
          }
-         option {
-        newContainerPerStage()
     }
     }
     stages{
